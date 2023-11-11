@@ -1,0 +1,172 @@
+kits:
+  Firework:
+    delay: 86400
+    items:
+    - fireworkrocket 15 name:Fusé_Creeper color:red fade:green type:creeper power:3
+    - fireworkrocket 15 name:Fusé__Night color:yellow,orange fade:blue type:star effect:trail,twinkle
+      power:3
+    - fireworkrocket 15 name:Fusé_Soleil color:yellow,orange fade:red shape:large
+      effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple
+      fade:pink shape:star effect:trail power:3
+  Alchimiste:
+    items:
+    - brewing_stand 1
+    - awkward_potion 64
+    - ghast_tear 3
+    - fermented_spider_eye 3
+    - golden_carrot 3
+    - glistering_melon_slice 3
+    - blaze_powder 3
+    - magma_cream 3
+    - rabbit_foot 3
+    - phantom_membrane 3
+  mineur:
+    delay: 1
+    items:
+    - golden_pickaxe 1 name:&5&lPioche_à_spawner lore:&dPermet_de_récupérer_un_spawner_naturel.|&dUtilisations_restantes_:_&e&l1
+    - netherite_pickaxe 1
+  barbare:
+    delay: 604800
+    items:
+    - stonesword 1
+    - stoneshovel 1
+    - stonepickaxe 1
+    - stoneaxe 1
+    - iron_helmet 1
+    - iron_chestplate 1
+    - iron_leggings 1
+    - iron_boots 1
+    - flint_and_steel 1
+    - cooked_porkchop 24
+    - torch 64
+  mercenaire:
+    delay: 604800
+    items:
+    - ironsword 1
+    - ironshovel 1
+    - ironaxe 1
+    - ironpickaxe 1
+    - iron_helmet 1 protection:2
+    - iron_chestplate 1 protection:2
+    - iron_leggings 1 protection:2
+    - iron_boots 1 protection:2
+    - baked_potato 24
+    - coal 16
+    - apple 4
+  guerrier:
+    delay: 604800
+    items:
+    - iron_helmet 1 protection:2 unbreaking:2
+    - iron_chestplate 1 protection:2 unbreaking:2
+    - iron_leggings 1 protection:2 unbreaking:2
+    - iron_boots 1 protection:2 unbreaking:2
+    - ironsword 1 sharpness:4
+    - ironshovel 1 efficiency:3
+    - ironaxe 1 efficiency:3
+    - ironpickaxe 1 efficiency:3
+    - cooked_beef 24
+    - golden_apple 1 name:&6Pomme_de_loyauté
+    - iron_ingot 16
+  archer:
+    delay: 604800
+    items:
+    - diamondsword 1
+    - diamond_helmet 1 
+    - diamond_chestplate 1
+    - diamond_leggings 1 
+    - diamond_boots 1 
+    - ironshovel 1 efficiency:5
+    - ironaxe 1 efficiency:5
+    - ironpickaxe 1 efficiency:5
+    - golden_apple 2 name:&6Pomme_de_loyauté
+    - bow 1 power:3
+    - arrow 48
+  chevalier:
+    delay: 604800
+    items:
+    - diamond_helmet 1 unbreaking:2
+    - diamond_chestplate 1 unbreaking:2
+    - diamond_leggings 1 unbreaking:2
+    - diamond_boots 1 unbreaking:2
+    - diamondsword 1 sharpness:3
+    - diamondaxe 1
+    - diamondpickaxe 1
+    - diamondshovel 1
+    - cooked_beef 24
+    - diamond 4
+  commandant:
+    delay: 604800
+    items:
+    - diamond_helmet 1 protection:3
+    - diamond_chestplate 1 protection:3
+    - diamond_leggings 1 protection:3
+    - diamond_boots 1 protection:3
+    - diamondsword 1 unbreaking:2 sharpness:3
+    - diamondaxe 1 efficency:3
+    - diamondpickaxe 1 efficency:3
+    - diamondshovel 1 efficency:3
+    - bow 1 flame
+    - arrow 48
+    - diamond_block 1
+  general:
+    delay: 604800
+    items:
+    - diamond_chestplate 1 protection:3 unbreaking:2
+    - diamond_helmet 1 protection:3 unbreaking:2
+    - diamond_leggings 1 protection:3 unbreaking:2
+    - diamond_boots 1 protection:3 unbreaking:2
+    - diamondsword 1 sharpness:5 fireaspect:2
+    - diamondaxe 1 efficency:5
+    - diamondpickaxe 1 efficency:5
+    - diamondshovel 1 efficency:5
+    - bow 1 infinity power:5
+    - golden_carrot 24
+    - ancient_debris 4
+  seigneur:
+    delay: 604800
+    items:
+    - netherite_leggings 1
+    - netherite_helmet 1
+    - netheriteshovel 1
+    - netheriteingot 1
+    - golden_apple 4 name:&6Pomme_de_loyauté
+    - diamond_block 2
+    - diamondsword 1 name:&6Épée_de_l’instinct fireaspect:2 sharpness:4 looting:1
+      mending:1
+  roi:
+    delay: 604800
+    items:
+    - netherite_chestplate 1
+    - netherite_boots 1
+    - bow 1 name:&6Arc_de_clairvoyance punch:5 mending:1 flame:1 lore:☺
+    - diamondsword 1 name:&6Épée_de_l’agilité fireaspect:2 sharpness:5 looting:2
+      mending:1 lore:☺
+    - netheriteingot 2
+    - netherite_axe 1
+    - netherite_pickaxe 1
+    - totemofundying 1 name:&6Totem_de_l’éternel
+  empereur:
+    delay: 604800
+    items:
+    - netheriteingot 3
+    - netherite_helmet 1 unbreaking:3
+    - netherite_chestplate 1 unbreaking:3
+    - netherite_leggings 1 unbreaking:3
+    - netherite_boots 1 unbreaking:3
+    - diamond_block 2
+    - golden_pickaxe 1 name:&5&lPioche_à_spawner lore:&dPermet_de_récupérer_un_spawner_naturel.|&dUtilisations_restantes_:_&e&l1
+    - netheritesword 1 name:&6Épée_de_brutalité fireaspect:2 sharpness:5 looting:2
+      mending:1 lore:☺
+  unicorne:
+    delay: 1
+    items:
+    - end_rod 1 name:&6&lCorne_officiel mending:1 lore:☺
+  premium:
+    delay: 1209600
+    items:
+    - netherite_block 1
+    - golden_pickaxe 1 name:&5&lPioche_à_spawner lore:&dPermet_de_récupérer_un_spawner_naturel.|&dUtilisations_restantes_:_&e&l1
+    - golden_carrot 64
+    - elytra 1 unbreaking:3
+    - beacon 1
+    - trident 1 name:&9&lPoséidon lore:Trident_Divin

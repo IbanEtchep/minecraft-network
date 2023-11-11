@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  survie:
+    image: itzg/minecraft-server:latest
+    environment:
+      EULA: "TRUE"
+      VERSION: "LATEST"
+      TYPE: "PAPER"
+      ONLINE_MODE: "FALSE"
+    volumes:
+      - "./survie:/data"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  proxy:
+    image: itzg/bungeecord
+    ports:
+      - "25565:25566"
+    volumes:
+      - "./proxy:/server"
+    environment:
+      ENABLE_RCON: "TRUE"
+      TYPE: WATERFALL
+      # enable env variable replacement
+      REPLACE_ENV_VARIABLES: "TRUE"
+      # define an optional prefix for your env variables you want to replace
+      ENV_VARIABLE_PREFIX: "CFG_"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+
+  mariadb:
+    image: mysql:8.0
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: minecraft
+      MARIADB_USER: minecraft
+      MARIADB_PASSWORD: password
+    volumes:
+      - "./mysql:/var/lib/mysql"
+
+  redis:
+    image: redis:6.2
+    volumes:
+      - "./redis:/data"

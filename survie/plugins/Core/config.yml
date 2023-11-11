@@ -1,0 +1,27 @@
+redis:
+  host: 172.18.0.1
+  port: 6379
+  password:
+  clientName: Serveur_mc
+
+database:
+  host: mariadb
+  port: 3306
+  user: minecraft
+  dbname: minecraft
+  password: password
+
+#sql or redis
+messanging: redis
+
+servername: "Survie"
+survival-servers:
+  - "survie"
+ressources-servername: "ressources"
+
+world:
+  overworld: "world"
+  nether: "world_nether"
+  end: "world_the_end"
+
+plan-rtp-balancer: true
