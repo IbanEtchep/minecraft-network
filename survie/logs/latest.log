@@ -1,575 +1,132 @@
-[19:11:48] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[19:11:50] [ServerMain/INFO]: Loaded 7 recipes
-[19:11:50] [Server thread/INFO]: Starting minecraft server version 1.20.2
-[19:11:50] [Server thread/INFO]: Loading properties
-[19:11:50] [Server thread/INFO]: This server is running Paper version git-Paper-280 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 4675152)
-[19:11:51] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:11:51] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:11:51] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[20:04:36] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:04:36] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[20:04:37] [ServerMain/INFO]: Loaded 7 recipes
+[20:04:38] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[20:04:38] [Server thread/INFO]: Loading properties
+[20:04:38] [Server thread/INFO]: This server is running Paper version git-Paper-281 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: c95bc5f)
+[20:04:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:04:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:04:39] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[19:11:51] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[19:11:51] [Server thread/INFO]: Default game type: SURVIVAL
-[19:11:51] [Server thread/INFO]: Generating keypair
-[19:11:51] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:11:51] [Server thread/INFO]: Using epoll channel type
-[19:11:51] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[19:11:51] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[19:11:52] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/CoreSurvival-1.0.jar' in 'plugins'
-org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [Essentials, Vault]. Please download and install these plugins to run 'SurvivalCore'.
-	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.20.2.jar:git-Paper-280]
-	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.2.jar:git-Paper-280]
-	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.2.jar:git-Paper-280]
-	at org.bukkit.craftbukkit.v1_20_R2.CraftServer.loadPlugins(CraftServer.java:512) ~[paper-1.20.2.jar:git-Paper-280]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.2.jar:git-Paper-280]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1086) ~[paper-1.20.2.jar:git-Paper-280]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315) ~[paper-1.20.2.jar:git-Paper-280]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-[19:11:52] [Server thread/INFO]: [Core] Loading server plugin Core v1.0
-[19:11:52] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.108
-[19:11:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:11:52] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.108
-[19:11:52] [Server thread/INFO]:         __    
-[19:11:52] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.108
-[19:11:52] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[19:11:52] [Server thread/INFO]: 
-[19:11:52] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[19:11:53] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
-[19:11:53] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
-[19:11:53] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
-[19:11:53] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
-[19:11:53] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[19:11:53] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[19:11:53] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 995ms)
-[19:11:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:11:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:11:53] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[19:11:53] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[19:11:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:11:53] [Server thread/INFO]: Preparing level "world"
-[19:11:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[19:11:54] [Server thread/INFO]: Time elapsed: 189 ms
-[19:11:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[19:11:54] [Server thread/INFO]: Time elapsed: 32 ms
-[19:11:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[19:11:54] [Server thread/INFO]: Time elapsed: 26 ms
-[19:11:54] [Server thread/INFO]: [Core] Enabling Core v1.0
-[19:11:54] [Server thread/INFO]: [Core] [STDOUT] Tentative de connexion à la bdd jdbc:mysql://mariadb:3306/minecraft
-[19:11:54] [Server thread/WARN]: Nag author(s): '[Iban]' of 'Core v1.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
-[19:11:54] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[19:11:54] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c280b11
-[19:11:54] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[19:11:54] [Server thread/INFO]: [Core] [STDOUT] Connection effectuée.
-[19:11:54] [Server thread/ERROR]: [Core] Failed to register events for class fr.iban.bukkitcore.listeners.HeadDatabaseListener because me/arcaniax/hdb/api/DatabaseLoadEvent does not exist.
-[19:11:54] [Server thread/INFO]: Starting remote control listener
-[19:11:55] [Server thread/INFO]: Thread RCON Listener started
-[19:11:55] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[19:11:55] [Server thread/INFO]: Running delayed init tasks
-[19:11:55] [Server thread/INFO]: Done (4.342s)! For help, type "help"
-[19:11:55] [Server thread/INFO]: Timings Reset
-[19:43:51] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[19:43:51] [luckperms-worker-9/WARN]: [me.lucko.luckperms.lib.hikari.pool.ProxyConnection] luckperms-hikari - Connection me.lucko.luckperms.lib.mariadb.Connection@42cceb80 marked as broken because of SQLSTATE(08000), ErrorCode(-1)
-java.sql.SQLNonTransientConnectionException: (conn=48) Socket error
-	at me.lucko.luckperms.lib.mariadb.export.ExceptionFactory.createException(ExceptionFactory.java:293) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.export.ExceptionFactory.create(ExceptionFactory.java:359) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readPacket(StandardClient.java:878) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readResults(StandardClient.java:794) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.execute(StandardClient.java:637) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:288) ~[?:?]
-	at me.lucko.luckperms.lib.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[?:?]
-	at me.lucko.luckperms.lib.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[?:?]
-	at me.lucko.luckperms.common.messaging.sql.AbstractSqlMessenger.pollMessages(AbstractSqlMessenger.java:117) ~[?:?]
-	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
-Caused by: java.io.EOFException: unexpected end of stream, read 0 bytes from 4 (socket was closed by server)
-	at me.lucko.luckperms.lib.mariadb.client.socket.impl.PacketReader.readReusablePacket(PacketReader.java:68) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.message.ClientMessage.readPacket(ClientMessage.java:115) ~[?:?]
-	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[?:?]
-	... 14 more
-[19:43:51] [luckperms-worker-9/WARN]: java.sql.SQLNonTransientConnectionException: (conn=48) Socket error
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.export.ExceptionFactory.createException(ExceptionFactory.java:293)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.export.ExceptionFactory.create(ExceptionFactory.java:359)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readPacket(StandardClient.java:878)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readResults(StandardClient.java:794)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readResponse(StandardClient.java:713)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.execute(StandardClient.java:637)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:288)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.common.messaging.sql.AbstractSqlMessenger.pollMessages(AbstractSqlMessenger.java:117)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-[19:43:51] [luckperms-worker-9/WARN]: Caused by: java.io.EOFException: unexpected end of stream, read 0 bytes from 4 (socket was closed by server)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.socket.impl.PacketReader.readReusablePacket(PacketReader.java:68)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.message.ClientMessage.readPacket(ClientMessage.java:115)
-[19:43:51] [luckperms-worker-9/WARN]: 	at me.lucko.luckperms.lib.mariadb.client.impl.StandardClient.readPacket(StandardClient.java:855)
-[19:43:51] [luckperms-worker-9/WARN]: 	... 14 more
-[19:43:51] [pool-14-thread-1/WARN]: [fr.iban.libs.com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@102bd95a marked as broken because of SQLSTATE(08S01), ErrorCode(1053)
-java.sql.SQLNonTransientConnectionException: Server shutdown in progress
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[CorePaper-1.0.jar:?]
-	at fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[CorePaper-1.0.jar:?]
-	at fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92) ~[CorePaper-1.0.jar:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-[19:43:51] [pool-14-thread-1/WARN]: java.sql.SQLNonTransientConnectionException: Server shutdown in progress
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
-[19:43:51] [Server thread/INFO]: [Rcon: Stopping the server]
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Unknown Source)
-[19:43:51] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[19:43:51] [pool-14-thread-1/WARN]: [fr.iban.libs.com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@53f0d89e marked as broken because of SQLSTATE(08S01), ErrorCode(0)
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[CorePaper-1.0.jar:?]
-	at fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[CorePaper-1.0.jar:?]
-	at fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92) ~[CorePaper-1.0.jar:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 15 more
-[19:43:51] [pool-14-thread-1/WARN]: [fr.iban.libs.com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@76cb753a marked as broken because of SQLSTATE(08S01), ErrorCode(0)
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[CorePaper-1.0.jar:?]
-	at fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[CorePaper-1.0.jar:?]
-	at fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92) ~[CorePaper-1.0.jar:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 15 more
-[19:43:51] [pool-14-thread-1/WARN]: [fr.iban.libs.com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@517db746 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[CorePaper-1.0.jar:?]
-	at fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[CorePaper-1.0.jar:?]
-	at fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92) ~[CorePaper-1.0.jar:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 15 more
-[19:43:51] [pool-14-thread-1/WARN]: [fr.iban.libs.com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@6a41d6b9 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[CorePaper-1.0.jar:?]
-	at fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[CorePaper-1.0.jar:?]
-	at fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92) ~[CorePaper-1.0.jar:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.libs.com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-[19:43:51] [pool-14-thread-1/WARN]: 	at CorePaper-1.0.jar//fr.iban.common.messaging.SqlMessenger.readNewMessages(SqlMessenger.java:92)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-[19:43:51] [pool-14-thread-1/WARN]: 
-[19:43:51] [pool-14-thread-1/WARN]: The last packet successfully received from the server was 2 milliseconds ago. The last packet sent successfully to the server was 2 milliseconds ago.
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-[19:43:51] [Server thread/INFO]: Stopping server
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:657)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 10 more
-[19:43:51] [pool-14-thread-1/WARN]: Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-[19:43:51] [pool-14-thread-1/WARN]: 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
-[19:43:51] [pool-14-thread-1/WARN]: 	... 15 more
-[19:43:51] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.108
-[19:43:51] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[19:43:51] [Server thread/INFO]: [LuckPerms] Closing messaging service...
-[19:43:51] [Server thread/INFO]: [LuckPerms] Closing storage...
-[19:43:51] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
-[19:43:51] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
-[19:43:51] [Server thread/INFO]: [LuckPerms] Goodbye!
-[19:43:51] [Server thread/INFO]: [Core] Disabling Core v1.0
-[19:43:51] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[19:43:51] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[19:43:51] [Server thread/INFO]: Saving players
-[19:43:51] [Server thread/INFO]: Saving worlds
-[19:43:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 124 entity chunks, 0 poi chunks in world 'world' in 0.03s
-[19:43:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[19:43:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 30 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[19:43:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19:43:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[19:43:51] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
-[19:43:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19:43:51] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[19:43:51] [Server thread/INFO]: Flushing Chunk IO
-[19:43:51] [Server thread/INFO]: Closing Thread Pool
-[19:43:51] [Server thread/INFO]: Closing Server
+[20:04:39] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[20:04:39] [Server thread/INFO]: Default game type: SURVIVAL
+[20:04:39] [Server thread/INFO]: Generating keypair
+[20:04:39] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:04:39] [Server thread/INFO]: Using epoll channel type
+[20:04:39] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:04:39] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[20:04:39] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.108
+[20:04:40] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[20:04:40] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1-dev+29-6012959
+[20:04:40] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[20:04:40] [Server thread/INFO]: [Core] Loading server plugin Core v1.0
+[20:04:40] [Server thread/INFO]: [HeadDatabase] Loading server plugin HeadDatabase v4.18.2
+[20:04:40] [Server thread/INFO]: [SurvivalCore] Loading server plugin SurvivalCore v1.0
+[20:04:40] [Server thread/INFO]: [TAB-Bridge] Loading server plugin TAB-Bridge v3.1.8
+[20:04:40] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.20.1-dev+29-6012959
+[20:04:40] [Server thread/INFO]: [Lands] Loading server plugin Lands v1.0
+[20:04:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:04:40] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.108
+[20:04:40] [Server thread/INFO]:         __    
+[20:04:40] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.108
+[20:04:40] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:04:40] [Server thread/INFO]: 
+[20:04:40] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:04:40] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
+[20:04:40] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[20:04:40] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[20:04:41] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
+[20:04:41] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:04:41] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:04:41] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1463ms)
+[20:04:41] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[20:04:41] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[20:04:41] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[20:04:41] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[20:04:41] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[20:04:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:04:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:04:41] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[20:04:41] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[20:04:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:04:41] [Server thread/INFO]: Preparing level "world"
+[20:04:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:04:48] [Server thread/INFO]: Time elapsed: 174 ms
+[20:04:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:04:49] [Server thread/INFO]: Time elapsed: 163 ms
+[20:04:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:04:49] [Server thread/INFO]: Time elapsed: 209 ms
+[20:04:49] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1-dev+29-6012959
+[20:04:49] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[20:04:49] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[20:04:49] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[20:04:49] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[20:04:49] [Server thread/INFO]: [Essentials] Using locale fr
+[20:04:49] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[20:04:49] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[20:04:49] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[20:04:49] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[20:04:49] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
+[20:04:50] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:04:50] [Server thread/INFO]: [Core] Enabling Core v1.0
+[20:04:50] [Server thread/INFO]: [Core] [STDOUT] Tentative de connexion à la bdd jdbc:mysql://mariadb:3306/minecraft
+[20:04:50] [Server thread/WARN]: Nag author(s): '[Iban]' of 'Core v1.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:04:50] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20:04:50] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7095e032
+[20:04:50] [Server thread/INFO]: [fr.iban.libs.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20:04:50] [Server thread/INFO]: [Core] [STDOUT] Connection effectuée.
+[20:04:50] [Server thread/INFO]: [HeadDatabase] Enabling HeadDatabase v4.18.2
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Could not load find "texts" folder!
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Creating new folder
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing en_US.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing de_DE.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing pl_PL.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing pt_BR.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing pt_PT.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing fr_FR.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing he_IL.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing hu_HU.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing it_IT.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing cs_CZ.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing es_MX.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing es_ES.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing ru_RU.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing lc_US.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing ko_KR.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing nl_NL.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing ro_RO.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing uk_UA.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Importing zh_CN.lang ...
+[20:04:51] [Server thread/INFO]: [HeadDatabase] Imported 19 new languages!
+[20:04:51] [Server thread/INFO]: [HeadDatabase] §bUsing default §3"en_US.lang" §bcreated by §6Arcaniax
+[20:04:51] [Server thread/WARN]: [HeadDatabase] Economy was not loaded, some features will be disabled!
+[20:04:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: hdb [4.18.2]
+[20:04:51] [Server thread/INFO]: [SurvivalCore] Enabling SurvivalCore v1.0
+[20:04:51] [Server thread/INFO]: [SurvivalCore] Using EssentialsX Economy economy.
+[20:04:51] [Server thread/INFO]: [TAB-Bridge] Enabling TAB-Bridge v3.1.8
+[20:04:51] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.1-dev+29-6012959
+[20:04:51] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[20:04:51] [Server thread/INFO]: [Lands] Enabling Lands v1.0
+[20:04:52] [Server thread/INFO]: [Lands] Chargement des données :.
+[20:04:52] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[20:04:52] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[20:04:52] [Server thread/INFO]: Starting remote control listener
+[20:04:52] [Server thread/INFO]: Thread RCON Listener started
+[20:04:52] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[20:04:52] [Server thread/INFO]: Running delayed init tasks
+[20:04:52] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Récupération des informations de version...
+[20:04:52] [Craft Scheduler Thread - 5 - Lands/INFO]: [Lands] Chargement des lands...
+[20:04:52] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[20:04:52] [Server thread/INFO]: Done (14.547s)! For help, type "help"
+[20:04:52] [Craft Scheduler Thread - 5 - Lands/INFO]: [Lands] Chargement des chunks...
+[20:04:52] [Craft Scheduler Thread - 7 - Vault/INFO]: [Vault] Checking for Updates ... 
+[20:04:52] [Server thread/INFO]: Timings Reset
+[20:04:52] [Craft Scheduler Thread - 5 - Lands/INFO]: [Lands] 0 chunks chargées
+[20:04:52] [Craft Scheduler Thread - 5 - Lands/INFO]: [Lands] Chargement des liens...
+[20:04:52] [Craft Scheduler Thread - 5 - Lands/INFO]: [Lands] Chargement des données terminé en 230 ms.
+[20:04:53] [Craft Scheduler Thread - 7 - Vault/INFO]: [Vault] No new version available
+[20:04:53] [Craft Scheduler Thread - 3 - Essentials/WARN]: [Essentials] Vous êtes en retard de 36 version(s) de développement d‘EssentialsX !
+[20:04:53] [Craft Scheduler Thread - 3 - Essentials/WARN]: [Essentials] Téléchargez-la ici : https://essentialsx.net/downloads.html
+[20:04:57] [Folia Async Scheduler Thread #0/INFO]: [HeadDatabase] Successfully loaded 57849 heads!
+[20:04:57] [Folia Async Scheduler Thread #0/INFO]: [HeadDatabase] Successfully loaded 18 featured tags!
