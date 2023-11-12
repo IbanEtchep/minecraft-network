@@ -1,0 +1,30 @@
+redis:
+  host: redis
+  port: 6379
+  password: password
+  clientName: Serveur_mc
+
+database:
+  host: mariadb
+  port: 3306
+  user: minecraft
+  dbname: minecraft
+  password: password
+
+#sql or redis
+messenger: redis
+
+servername: "survie01"
+survival-servers:
+  - "survie01"
+ressources-servername: "ressources"
+
+world:
+  overworld: "world"
+  nether: "world_nether"
+  end: "world_the_end"
+
+plan-rtp-balancer: true
+
+# Send approval request to discord on each non whitelisted commad by non-trusted users.
+command-approval: false

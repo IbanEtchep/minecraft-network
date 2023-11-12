@@ -1,14 +1,14 @@
 version: "3.8"
 
 services:
-  survie:
+  survie01:
     image: itzg/minecraft-server:latest
     environment:
       EULA: "TRUE"
       TYPE: "PUFFERFISH"
       ONLINE_MODE: "FALSE"
     volumes:
-      - "./survie:/data"
+      - "./minecraft-servers/survie01:/data"
     stdin_open: true
     tty: true
     restart: unless-stopped
@@ -18,7 +18,7 @@ services:
     ports:
       - "25565:25566"
     volumes:
-      - "./proxy:/server"
+      - "./minecraft-servers/proxy:/server"
     environment:
       ENABLE_RCON: "TRUE"
       TYPE: WATERFALL
@@ -39,8 +39,7 @@ services:
       MARIADB_USER: ${DB_USER}
       MARIADB_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - "./mariadb:/var/lib/mysql"
-      - "./backup/mariadb:/backup"
+      - "./other-services/mariadb:/var/lib/mysql"
     restart: unless-stopped
 
   adminer:
@@ -62,7 +61,7 @@ services:
     image: redis:6.2
     user: "1000:1000"
     volumes:
-      - "./redis:/data"
+      - "./other-services/redis:/data"
     command: >
       --requirepass ${REDIS_PASSWORD}
     restart: unless-stopped
