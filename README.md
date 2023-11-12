@@ -17,3 +17,8 @@ make down
 
 ## minecraft docker docs 
 https://docker-minecraft-server.readthedocs.io/en/latest/
+
+## Start production docker compose
+```bash
+make up-prod
+```

@@ -8,6 +8,7 @@
 /minecraft-servers/*/cache/
 /minecraft-servers/*/libraries/
 /minecraft-servers/*/plugins/Essentials/userdata/
+/minecraft-servers/*/plugins/Essentials/*.bin
 /minecraft-servers/*/plugins/LuckPerms/libs/
 /minecraft-servers/*/plugins/LuckPerms/translations/repository/
 /minecraft-servers/*/plugins/WorldEdit/schematics/

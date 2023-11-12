@@ -10,3 +10,13 @@ services:
         limits:
           cpus: '4'
           memory: '8G'
+
+  proxy:
+    environment:
+      INIT_MEMORY: '128M'
+      MAX_MEMORY: '2G'
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
