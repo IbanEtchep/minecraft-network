@@ -1,12 +1,13 @@
 .idea/
 /other-services/redis/
 /other-services/mariadb/
+/minecraft-servers/proxy/modules/
 /minecraft-servers/*/.cache/
 /minecraft-servers/*/worlds/
 /minecraft-servers/*/logs/
 /minecraft-servers/*/cache/
 /minecraft-servers/*/libraries/
 /minecraft-servers/*/plugins/Essentials/userdata/
-/minecraft-servers/proxy/modules/
-/minecraft-servers/*/LuckPerms/libs/
-/minecraft-servers/*/LuckPerms/translations/repository/
+/minecraft-servers/*/plugins/LuckPerms/libs/
+/minecraft-servers/*/plugins/LuckPerms/translations/repository/
+/minecraft-servers/*/plugins/WorldEdit/schematics/

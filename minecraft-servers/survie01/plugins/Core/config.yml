@@ -14,7 +14,7 @@ database:
 #sql or redis
 messenger: redis
 
-servername: "survie01"
+servername: survie01
 survival-servers:
   - "survie01"
 ressources-servername: "ressources"
