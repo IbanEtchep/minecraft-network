@@ -1,7 +1,7 @@
 redis:
   host: redis
   port: 6379
-  password:
+  password: password
   clientName: Serveur_mc
 
 database:

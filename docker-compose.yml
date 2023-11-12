@@ -63,6 +63,6 @@ services:
     user: "1000:1000"
     volumes:
       - "./redis:/data"
-    environment:
-      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    command: >
+      --requirepass ${REDIS_PASSWORD}
     restart: unless-stopped
