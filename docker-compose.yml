@@ -5,8 +5,7 @@ services:
     image: itzg/minecraft-server:latest
     environment:
       EULA: "TRUE"
-      VERSION: "LATEST"
-      TYPE: "PAPER"
+      TYPE: "PUFFERFISH"
       ONLINE_MODE: "FALSE"
     volumes:
       - "./survie:/data"
@@ -32,16 +31,38 @@ services:
     restart: unless-stopped
 
   mariadb:
-    image: mysql:8.0
+    image: mariadb
+    user: "1000:1000"
     environment:
-      MARIADB_ROOT_PASSWORD: password
-      MARIADB_DATABASE: minecraft
-      MARIADB_USER: minecraft
-      MARIADB_PASSWORD: password
+      MARIADB_ROOT_PASSWORD: ${DB_PASSWORD}
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - "./mysql:/var/lib/mysql"
+      - "./mariadb:/var/lib/mysql"
+      - "./backup/mariadb:/backup"
+    restart: unless-stopped
+
+  adminer:
+    image: adminer:latest
+    depends_on:
+        - mariadb
+    container_name: adminer
+    environment:
+      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_DEFAULT_HOST: mariadb
+      ADMINER_DEFAULT_USERNAME: ${DB_USER}
+      ADMINER_DEFAULT_PASSWORD: ${DB_PASSWORD}
+      ADMINER_DEFAULT_DATABASE: ${DB_NAME}
+    restart: unless-stopped
+    ports:
+      - 23283:8080
 
   redis:
     image: redis:6.2
+    user: "1000:1000"
     volumes:
       - "./redis:/data"
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    restart: unless-stopped

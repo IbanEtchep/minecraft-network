@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "7ebd1d5e-1e4f-46f8-b0d0-8f05fa9aad40",
+    "name": "Iban_",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

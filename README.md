@@ -2,10 +2,18 @@
 
 ## Start servers
 ```bash
-docker compose up -d
+make up
+```
+
+## Restart servers
+```bash
+make restart
 ```
 
 ## Stop servers
 ```bash
-docker compose down
+make down
 ```
+
+## minecraft docker docs 
+https://docker-minecraft-server.readthedocs.io/en/latest/

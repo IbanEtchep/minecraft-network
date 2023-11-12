@@ -119,12 +119,13 @@ spam-limiter:
   tab-spam-increment: 1
   tab-spam-limit: 500
 timings:
-  enabled: true
+  enabled: false
   hidden-config-entries:
   - database
   - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
+  really-enabled: false
   server-name: Unknown Server
   server-name-privacy: false
   url: https://timings.aikar.co/

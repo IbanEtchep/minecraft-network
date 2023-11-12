@@ -8,3 +8,8 @@ mysql/
 /survie/cache/
 /survie/plugins/Essentials/userdata/
 /survie/libraries/
+/mariadb/
+/backup/
+/proxy/modules/
+/proxy/plugins/LuckPerms/libs/
+/survie/plugins/LuckPerms/libs/
