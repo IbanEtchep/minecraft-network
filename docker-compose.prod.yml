@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  survie01:
+    environment:
+      INIT_MEMORY: '4G'
+      MAX_MEMORY: '8G'
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: '8G'

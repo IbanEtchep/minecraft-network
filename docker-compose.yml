@@ -7,11 +7,18 @@ services:
       EULA: "TRUE"
       TYPE: "PUFFERFISH"
       ONLINE_MODE: "FALSE"
+      INIT_MEMORY: "2G"
+      MAX_MEMORY: "4G"
     volumes:
       - "./minecraft-servers/survie01:/data"
     stdin_open: true
     tty: true
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: '4G'
 
   proxy:
     image: itzg/bungeecord
@@ -22,13 +29,16 @@ services:
     environment:
       ENABLE_RCON: "TRUE"
       TYPE: WATERFALL
-      # enable env variable replacement
-      REPLACE_ENV_VARIABLES: "TRUE"
-      # define an optional prefix for your env variables you want to replace
-      ENV_VARIABLE_PREFIX: "CFG_"
+      INIT_MEMORY: "128M"
+      MAX_MEMORY: "1G"
     tty: true
     stdin_open: true
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '1G'
 
   mariadb:
     image: mariadb
@@ -45,7 +55,7 @@ services:
   adminer:
     image: adminer:latest
     depends_on:
-        - mariadb
+      - mariadb
     container_name: adminer
     environment:
       ADMINER_DEFAULT_SERVER: mariadb
